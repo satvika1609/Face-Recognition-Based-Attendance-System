@@ -1,23 +1,103 @@
-# Face Recognition Based Attendance System
+# Face Recognition Attendance System
 
-This project is a face recognition-based attendance system that uses OpenCV and Python. The system uses a camera to capture images of individuals and then compares them with the images in the database to mark attendance.
+This is a real-time face recognition-based attendance system built using Python, OpenCV, Dlib, and Flask. It provides a simple web interface for managing registration, feature extraction, attendance logging, and record viewing.
 
-## Installation
+## Features
 
-1. Clone the repository to your local machine. ``` git clone https://github.com/Arijit1080/Face-Recognition-Based-Attendance-System ```
-2. Install the required packages using ```pip install -r requirements.txt```.
-3. Download the dlib models from https://drive.google.com/drive/folders/12It2jeNQOxwStBxtagL1vvIJokoz-DL4?usp=sharing and place the data folder inside the repo
+- Register new faces via webcam
+- Extract facial features and store in CSV
+- Recognize faces in real time and log attendance
+- View attendance records by date using a web interface
+- Attendance stored in SQLite database
 
-## Usage
+## Tech Stack
 
-1. Collect the Faces Dataset by running ``` python get_faces_from_camera_tkinter.py``` .
-2. Convert the dataset into ```python features_extraction_to_csv.py```.
-3. To take the attendance run ```python attendance_taker.py``` .
-4. Check the Database by ```python app.py```.
+- Python 3.10+
+- OpenCV
+- Dlib
+- Flask (web framework)
+- SQLite (local DB)
+- HTML/CSS (Bootstrap 5)
 
+## Setup Instructions
 
-## Contributing
+1. **Clone the repository**
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue if you find any bugs or have any suggestions.
+   ```bash
+   git clone https://github.com/yourusername/face-recognition-attendance.git
+   cd face-recognition-attendance
+````
 
+2. **Create a virtual environment (optional but recommended)**
 
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Ensure Dlib model files are present**
+
+   Place the following files in `data/data_dlib/`:
+
+   * `shape_predictor_68_face_landmarks.dat`
+   * `dlib_face_recognition_resnet_model_v1.dat`
+
+   These files are required for facial landmark detection and face encoding.
+
+5. **Run the Flask application**
+
+   ```bash
+   python app.py
+   ```
+
+6. **Open your browser and visit**
+
+   ```
+   http://127.0.0.1:5000
+   ```
+
+## Directory Structure
+
+```
+face-recognition-attendance/
+│
+├── app.py                      # Main Flask application
+├── attendance.db               # SQLite database
+├── data/
+│   ├── data_dlib/              # Dlib model files
+│   ├── data_faces_from_camera/ # Captured face images
+│   └── features_all.csv        # Face feature encodings
+├── face_logic/                 # Feature logic modules
+│   ├── attendance_runner.py
+│   ├── extract_features.py
+│   └── face_register.py
+├── templates/
+│   ├── index.html
+│   └── records.html
+├── requirements.txt
+└── README.md
+```
+
+## Acknowledgements
+
+* Dlib library by Davis King
+* OpenCV for real-time image processing
+* Bootstrap for frontend styling
+
+```
+
+---
+
+Let me know if you want me to:
+- Include screenshot support
+- Add contributor section
+- Include license or deploy instructions (Render, Heroku, etc.)
+
+Just say the word.
+```
