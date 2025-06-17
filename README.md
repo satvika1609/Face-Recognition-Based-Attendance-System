@@ -23,23 +23,20 @@ This is a real-time face recognition-based attendance system built using Python,
 
 1. **Clone the repository**
 
-   ```bash
    git clone https://github.com/yourusername/face-recognition-attendance.git
    cd face-recognition-attendance
-````
+
 
 2. **Create a virtual environment (optional but recommended)**
-
-   ```bash
+ 
    python -m venv venv
    source venv/bin/activate   # On Windows: venv\Scripts\activate
-   ```
+ 
 
 3. **Install dependencies**
 
-   ```bash
    pip install -r requirements.txt
-   ```
+
 
 4. **Ensure Dlib model files are present**
 
@@ -52,19 +49,16 @@ This is a real-time face recognition-based attendance system built using Python,
 
 5. **Run the Flask application**
 
-   ```bash
    python app.py
-   ```
+  
 
 6. **Open your browser and visit**
 
-   ```
    http://127.0.0.1:5000
-   ```
+
 
 ## Directory Structure
 
-```
 face-recognition-attendance/
 │
 ├── app.py                      # Main Flask application
@@ -82,22 +76,10 @@ face-recognition-attendance/
 │   └── records.html
 ├── requirements.txt
 └── README.md
-```
+
 
 ## Acknowledgements
 
 * Dlib library by Davis King
 * OpenCV for real-time image processing
 * Bootstrap for frontend styling
-
-```
-
----
-
-Let me know if you want me to:
-- Include screenshot support
-- Add contributor section
-- Include license or deploy instructions (Render, Heroku, etc.)
-
-Just say the word.
-```
