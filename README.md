@@ -23,7 +23,7 @@ This is a real-time face recognition-based attendance system built using Python,
 
 1. **Clone the repository**
 
-   git clone https://github.com/satvika1609/face-recognition-attendance.git
+   git clone https://github.com/satvika1609/Face-Recognition-Based-Attendance-System.git
    cd face-recognition-attendance
 
 
