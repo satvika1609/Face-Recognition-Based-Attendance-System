@@ -57,27 +57,6 @@ This is a real-time face recognition-based attendance system built using Python,
    http://127.0.0.1:5000
 
 
-## Directory Structure
-
-face-recognition-attendance/
-│
-├── app.py                      # Main Flask application
-├── attendance.db               # SQLite database
-├── data/
-│   ├── data_dlib/              # Dlib model files
-│   ├── data_faces_from_camera/ # Captured face images
-│   └── features_all.csv        # Face feature encodings
-├── face_logic/                 # Feature logic modules
-│   ├── attendance_runner.py
-│   ├── extract_features.py
-│   └── face_register.py
-├── templates/
-│   ├── index.html
-│   └── records.html
-├── requirements.txt
-└── README.md
-
-
 ## Acknowledgements
 
 * Dlib library by Davis King
